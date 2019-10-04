@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{04283F09-FCD5-302B-81EF-B6A371DA8B7F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gentables</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\d07f9ecb6bbbc792162c5e86f8896954\gentables-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\d07f9ecb6bbbc792162c5e86f8896954\gentables-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No download step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-download.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No download step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-download.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No download step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-download.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No download step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-download.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\d07f9ecb6bbbc792162c5e86f8896954\gentables-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-update.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No update step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-update.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No update step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-update.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No update step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-update.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\d07f9ecb6bbbc792162c5e86f8896954\gentables-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-patch.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-patch.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-patch.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-patch.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\d07f9ecb6bbbc792162c5e86f8896954\gentables-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe "-GVisual Studio 15 2017" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise" G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-configure.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\tmp\gentables-cfgcmd.txt;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-update;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe "-GVisual Studio 15 2017" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise" G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-configure.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\tmp\gentables-cfgcmd.txt;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-update;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe "-GVisual Studio 15 2017" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise" G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-configure.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\tmp\gentables-cfgcmd.txt;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-update;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe "-GVisual Studio 15 2017" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise" G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-configure.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\tmp\gentables-cfgcmd.txt;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-update;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\d07f9ecb6bbbc792162c5e86f8896954\gentables-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-build.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-build.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-build.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-build.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\d07f9ecb6bbbc792162c5e86f8896954\gentables-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing install step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables\make_tables.exe G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-install.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing install step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables\make_tables.exe G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-install.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing install step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables\make_tables.exe G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-install.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing install step for 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables\make_tables.exe G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-install.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\67394f3bed9b2eb6a5300acb7f63423b\gentables-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/$(Configuration)/gentables-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/67394f3bed9b2eb6a5300acb7f63423b/gentables-complete.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-install;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-mkdir;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-update;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-patch;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-configure;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-build;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\$(Configuration)\gentables-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/$(Configuration)/gentables-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/67394f3bed9b2eb6a5300acb7f63423b/gentables-complete.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-install;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-mkdir;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-update;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-patch;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-configure;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-build;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\$(Configuration)\gentables-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/$(Configuration)/gentables-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/67394f3bed9b2eb6a5300acb7f63423b/gentables-complete.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-install;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-mkdir;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-update;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-patch;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-configure;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-build;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\$(Configuration)\gentables-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'gentables'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\CMake\bin\cmake.exe -E make_directory G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/$(Configuration)/gentables-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/src/gentables-stamp/$(Configuration)/gentables-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/67394f3bed9b2eb6a5300acb7f63423b/gentables-complete.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-install;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-mkdir;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-download;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-update;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-patch;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-configure;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-build;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\src\gentables-stamp\$(Configuration)\gentables-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\$(Configuration)\gentables-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\df4ea047e718edce7fd4210e54e7c341\gentables.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/df4ea047e718edce7fd4210e54e7c341/gentables.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\$(Configuration)\gentables-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\gentables</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/df4ea047e718edce7fd4210e54e7c341/gentables.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\$(Configuration)\gentables-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\gentables</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/df4ea047e718edce7fd4210e54e7c341/gentables.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\$(Configuration)\gentables-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\gentables</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/df4ea047e718edce7fd4210e54e7c341/gentables.rule;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\$(Configuration)\gentables-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\gentables</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\CMake\bin\cmake.exe -SG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 -BG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 --check-stamp-file G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt;C:\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\CMake\share\cmake-3.14\Modules\ExternalProject.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionInfo.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionResource.rc;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\generate_product_version.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth\version.h.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\tmp\gentables-cfgcmd.txt.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\CMake\bin\cmake.exe -SG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 -BG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 --check-stamp-file G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt;C:\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\CMake\share\cmake-3.14\Modules\ExternalProject.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionInfo.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionResource.rc;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\generate_product_version.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth\version.h.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\tmp\gentables-cfgcmd.txt.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\CMake\bin\cmake.exe -SG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 -BG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 --check-stamp-file G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt;C:\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\CMake\share\cmake-3.14\Modules\ExternalProject.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionInfo.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionResource.rc;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\generate_product_version.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth\version.h.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\tmp\gentables-cfgcmd.txt.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\CMake\bin\cmake.exe -SG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 -BG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 --check-stamp-file G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt;C:\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\CMake\share\cmake-3.14\Modules\ExternalProject.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionInfo.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionResource.rc;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\generate_product_version.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth\version.h.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\tmp\gentables-cfgcmd.txt.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\gentables" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\ZERO_CHECK.vcxproj">
+      <Project>{74490D76-9AE4-38AF-9DA1-1B6BE12D5DE2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

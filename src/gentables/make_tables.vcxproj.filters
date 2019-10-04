@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables\make_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables\gen_conv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables\gen_rvoice_dsp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{26A25FBA-BB5F-3EB1-B609-756109E98733}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

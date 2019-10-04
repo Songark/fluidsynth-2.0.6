@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\50dd99ddb6b6c63d2e90f2d90894729a\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3BEFB1CA-1ADF-3BE0-AA8A-A7C7052D6290}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

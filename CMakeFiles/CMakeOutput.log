@@ -1,0 +1,463 @@
+The system is: Windows - 10.0.17763 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 9/28/2019 4:05:47 PM.
+Project "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\3.14.3\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\3.14.3\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\3.14.3\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.19
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/3.14.3/CompilerIdC/CompilerIdC.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_74b2e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_74b2e.dir\Debug\\" /Fd"cmTC_74b2e.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\testCCompiler.c"
+  testCCompiler.c
+  
+  cmTC_74b2e.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_74b2e.exe
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_721f9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_721f9.dir\Debug\\" /Fd"cmTC_721f9.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "C:\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+  cmTC_721f9.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_721f9.exe
+
+
+
+
+Detecting C [] compiler features compiled with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_1a1d4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1a1d4.dir\Debug\\" /Fd"cmTC_1a1d4.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\feature_tests.c"
+  feature_tests.c
+  
+  cmTC_1a1d4.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_1a1d4.exe
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_variadic_macros
+Determining if the include file string.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_b59bb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b59bb.dir\Debug\\" /Fd"cmTC_b59bb.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_b59bb.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_b59bb.exe
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_58897.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_58897.dir\Debug\\" /Fd"cmTC_58897.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_58897.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_58897.exe
+
+
+Determining if the include file stdio.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_eb6ff.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_eb6ff.dir\Debug\\" /Fd"cmTC_eb6ff.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_eb6ff.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_eb6ff.exe
+
+
+Determining if the include file math.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_0c4a8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0c4a8.dir\Debug\\" /Fd"cmTC_0c4a8.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_0c4a8.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_0c4a8.exe
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_611b4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_611b4.dir\Debug\\" /Fd"cmTC_611b4.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_611b4.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_611b4.exe
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_53a09.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_53a09.dir\Debug\\" /Fd"cmTC_53a09.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_53a09.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_53a09.exe
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_e2fd0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e2fd0.dir\Debug\\" /Fd"cmTC_e2fd0.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_e2fd0.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_e2fd0.exe
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_f795e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f795e.dir\Debug\\" /Fd"cmTC_f795e.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_f795e.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_f795e.exe
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_89070.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_89070.dir\Debug\\" /Fd"cmTC_89070.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_89070.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_89070.exe
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_a497c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a497c.dir\Debug\\" /Fd"cmTC_a497c.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_a497c.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_a497c.exe
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_43cfb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_43cfb.dir\Debug\\" /Fd"cmTC_43cfb.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_43cfb.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_43cfb.exe
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_49ae6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_49ae6.dir\Debug\\" /Fd"cmTC_49ae6.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_49ae6.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_49ae6.exe
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_d77ab.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d77ab.dir\Debug\\" /Fd"cmTC_d77ab.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_d77ab.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_d77ab.exe
+
+
+Performing C SOURCE FILE Test _have_inline succeeded with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_881ad.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D _have_inline /D TESTKEYWORD=inline /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_881ad.dir\Debug\\" /Fd"cmTC_881ad.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_881ad.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_881ad.exe
+
+Source file was:
+typedef int foo_t;
+             static TESTKEYWORD foo_t static_foo(){return 0;}
+             foo_t foo(){return 0;}
+             int main(int argc, char *argv[]){return 0;}
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_64713.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D TESTKEYWORD=inline /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_64713.dir\Debug\\" /Fd"cmTC_64713.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_64713.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_64713.exe
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_ddb5d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D TESTKEYWORD=inline /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ddb5d.dir\Debug\\" /Fd"cmTC_ddb5d.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c"
+  CMAKE_SIZEOF_UNSIGNED_SHORT.c
+  
+  cmTC_ddb5d.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_ddb5d.exe
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_0c006.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0c006.dir\Debug\\" /Fd"cmTC_0c006.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\TestEndianess.c"
+  TestEndianess.c
+  
+  cmTC_0c006.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_0c006.exe
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file windows.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_9a16d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D TESTKEYWORD=inline /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9a16d.dir\Debug\\" /Fd"cmTC_9a16d.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_9a16d.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_9a16d.exe
+
+
+Determining if the include file io.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_02aa0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D TESTKEYWORD=inline /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_02aa0.dir\Debug\\" /Fd"cmTC_02aa0.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_02aa0.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_02aa0.exe
+
+
+Determining if the include file dsound.h exists passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_ac9f4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D TESTKEYWORD=inline /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ac9f4.dir\Debug\\" /Fd"cmTC_ac9f4.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+  cmTC_ac9f4.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_ac9f4.exe
+
+
+Determining if files windows.h;mmsystem.h exist passed with the following output:
+Change Dir: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_5a0fc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D TESTKEYWORD=inline /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5a0fc.dir\Debug\\" /Fd"cmTC_5a0fc.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CheckIncludeFiles\HAVE_MMSYSTEM_H.c"
+  HAVE_MMSYSTEM_H.c
+  
+  cmTC_5a0fc.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\CMakeFiles\CMakeTmp\Debug\cmTC_5a0fc.exe
+
+

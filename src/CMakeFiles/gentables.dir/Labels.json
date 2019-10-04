@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/gentables"
+		},
+		{
+			"file" : "G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/df4ea047e718edce7fd4210e54e7c341/gentables.rule"
+		},
+		{
+			"file" : "G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/67394f3bed9b2eb6a5300acb7f63423b/gentables-complete.rule"
+		},
+		{
+			"file" : "G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-install.rule"
+		},
+		{
+			"file" : "G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-mkdir.rule"
+		},
+		{
+			"file" : "G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-download.rule"
+		},
+		{
+			"file" : "G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-update.rule"
+		},
+		{
+			"file" : "G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-patch.rule"
+		},
+		{
+			"file" : "G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-configure.rule"
+		},
+		{
+			"file" : "G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/d07f9ecb6bbbc792162c5e86f8896954/gentables-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"gentables"
+		],
+		"name" : "gentables"
+	}
+}

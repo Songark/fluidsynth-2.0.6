@@ -1,0 +1,18 @@
+# CMake generation dependency list for this directory.
+C:/CMake/share/cmake-3.14/Modules/CMakeCInformation.cmake
+C:/CMake/share/cmake-3.14/Modules/CMakeCommonLanguageInclude.cmake
+C:/CMake/share/cmake-3.14/Modules/CMakeGenericSystem.cmake
+C:/CMake/share/cmake-3.14/Modules/CMakeInitializeConfigs.cmake
+C:/CMake/share/cmake-3.14/Modules/CMakeLanguageInformation.cmake
+C:/CMake/share/cmake-3.14/Modules/CMakeRCInformation.cmake
+C:/CMake/share/cmake-3.14/Modules/CMakeSystemSpecificInformation.cmake
+C:/CMake/share/cmake-3.14/Modules/CMakeSystemSpecificInitialize.cmake
+C:/CMake/share/cmake-3.14/Modules/Compiler/MSVC-C.cmake
+C:/CMake/share/cmake-3.14/Modules/Platform/Windows-MSVC-C.cmake
+C:/CMake/share/cmake-3.14/Modules/Platform/Windows-MSVC.cmake
+C:/CMake/share/cmake-3.14/Modules/Platform/Windows.cmake
+C:/CMake/share/cmake-3.14/Modules/Platform/WindowsPaths.cmake
+G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables/CMakeFiles/3.14.3/CMakeCCompiler.cmake
+G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables/CMakeFiles/3.14.3/CMakeRCCompiler.cmake
+G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables/CMakeFiles/3.14.3/CMakeSystem.cmake
+G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables/CMakeLists.txt

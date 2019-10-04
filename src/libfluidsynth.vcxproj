@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{025F9762-BD25-3F59-B8CE-11168CEFBCDF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>libfluidsynth</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libfluidsynth.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libfluidsynth-2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libfluidsynth.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libfluidsynth-2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libfluidsynth.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libfluidsynth-2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libfluidsynth.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libfluidsynth-2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";libfluidsynth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";libfluidsynth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gthread-2.0.lib;glib-2.0.lib;intl.lib;ws2_32.lib;dsound.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/mingw/lib;D:/mingw/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/Debug/fluidsynth.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/Debug/libfluidsynth-2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";libfluidsynth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";libfluidsynth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gthread-2.0.lib;glib-2.0.lib;intl.lib;ws2_32.lib;dsound.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/mingw/lib;D:/mingw/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/Release/fluidsynth.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/Release/libfluidsynth-2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";libfluidsynth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";libfluidsynth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gthread-2.0.lib;glib-2.0.lib;intl.lib;ws2_32.lib;dsound.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/mingw/lib;D:/mingw/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/MinSizeRel/fluidsynth.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/MinSizeRel/libfluidsynth-2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";libfluidsynth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";libfluidsynth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\drivers;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\rvoice;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\utils;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\sfloader;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\bindings;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include;D:\mingw\include\glib-2.0;D:\mingw\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gthread-2.0.lib;glib-2.0.lib;intl.lib;ws2_32.lib;dsound.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/mingw/lib;D:/mingw/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/RelWithDebInfo/fluidsynth.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/RelWithDebInfo/libfluidsynth-2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\CMake\bin\cmake.exe -SG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 -BG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 --check-stamp-file G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt;C:\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\CMake\share\cmake-3.14\Modules\ExternalProject.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionInfo.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionResource.rc;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\generate_product_version.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth\version.h.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\tmp\gentables-cfgcmd.txt.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\CMake\bin\cmake.exe -SG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 -BG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 --check-stamp-file G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt;C:\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\CMake\share\cmake-3.14\Modules\ExternalProject.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionInfo.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionResource.rc;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\generate_product_version.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth\version.h.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\tmp\gentables-cfgcmd.txt.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\CMake\bin\cmake.exe -SG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 -BG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 --check-stamp-file G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt;C:\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\CMake\share\cmake-3.14\Modules\ExternalProject.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionInfo.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionResource.rc;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\generate_product_version.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth\version.h.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\tmp\gentables-cfgcmd.txt.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\CMake\bin\cmake.exe -SG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 -BG:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6 --check-stamp-file G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt;C:\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\CMake\share\cmake-3.14\Modules\ExternalProject.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionInfo.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\VersionResource.rc;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\cmake_admin\generate_product_version.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth.cmake;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\include\fluidsynth\version.h.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\gentables-prefix\tmp\gentables-cfgcmd.txt.in;G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_aufile.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_dsound.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_winmidi.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_conv.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_hash.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_list.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_ringbuffer.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_settings.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_sys.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_defsfont.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_sfont.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_sffile.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_samplecache.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_adsr_env.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_chorus.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_iir_filter.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_lfo.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_rvoice.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_rvoice_dsp.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_rvoice_event.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_rvoice_mixer.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_rev.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_chan.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_event.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_gen.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_mod.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_synth.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_synth_monopoly.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_tuning.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_voice.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_midi.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_midi_router.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_seqbind.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_seq.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_adriver.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_mdriver.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_cmd.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_filerenderer.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_ladspa.obj" />
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\VersionResource.res" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\ZERO_CHECK.vcxproj">
+      <Project>{74490D76-9AE4-38AF-9DA1-1B6BE12D5DE2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.vcxproj">
+      <Project>{F4889B7E-C0D1-327C-BE33-F8AB2C6D186A}</Project>
+      <Name>libfluidsynth-OBJ</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

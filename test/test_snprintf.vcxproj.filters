@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\test\test_snprintf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_aufile.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_dsound.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_winmidi.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_conv.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_hash.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_list.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_ringbuffer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_settings.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_sys.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_defsfont.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_sfont.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_sffile.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_samplecache.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_adsr_env.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_chorus.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_iir_filter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_lfo.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_rvoice.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_rvoice_dsp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_rvoice_event.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_rvoice_mixer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_rev.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_chan.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_event.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_gen.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_mod.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_synth.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_synth_monopoly.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_tuning.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_voice.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_midi.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_midi_router.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_seqbind.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_seq.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_adriver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_mdriver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_cmd.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_filerenderer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\fluid_ladspa.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\$(Configuration)\VersionResource.res">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{B3ADA1CF-05BF-3031-856F-966DAFE639CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B019749C-78F5-3972-83B8-73181327F773}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

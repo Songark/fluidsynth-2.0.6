@@ -1,0 +1,4 @@
+﻿  fluid_midi.c
+G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi\fluid_midi.c(148): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\midi\fluid_midi.c(1474): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  libfluidsynth-OBJ.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\Release\libfluidsynth-OBJ.lib

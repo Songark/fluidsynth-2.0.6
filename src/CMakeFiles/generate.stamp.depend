@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/CMake/share/cmake-3.14/Modules/CMakeParseArguments.cmake
+C:/CMake/share/cmake-3.14/Modules/ExternalProject.cmake
+G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/cmake_admin/VersionInfo.in
+G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/cmake_admin/VersionResource.rc
+G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/cmake_admin/generate_product_version.cmake
+G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/include/fluidsynth.cmake
+G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/include/fluidsynth/version.h.in
+G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/CMakeLists.txt
+G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/gentables-prefix/tmp/gentables-cfgcmd.txt.in

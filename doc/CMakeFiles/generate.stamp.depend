@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/CMake/share/cmake-3.14/Modules/FindDoxygen.cmake
+C:/CMake/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake
+C:/CMake/share/cmake-3.14/Modules/FindPackageMessage.cmake
+G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/doc/CMakeLists.txt
