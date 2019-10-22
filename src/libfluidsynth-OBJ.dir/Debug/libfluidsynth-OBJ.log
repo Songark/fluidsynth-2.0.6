@@ -1,2 +1,3 @@
 ﻿  fluid_synth.c
+G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\synth\fluid_synth.c(552): warning C4013: 'fluid_free' undefined; assuming extern returning int
   libfluidsynth-OBJ.vcxproj -> G:\1.devproject\kumyoung-karaoke-clone\work\FluidSynth\fluidsynth-2.0.6\src\libfluidsynth-OBJ.dir\Debug\libfluidsynth-OBJ.lib

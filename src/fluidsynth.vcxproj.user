@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>G:\1.devproject\kumyoung-karaoke-clone\work\Sf2Karaoke\Project\MIDI2\SoundFont\SGM-V2.01.SF2 G:\1.devproject\kumyoung-karaoke-clone\recv\hur\EnvAttackTimeModify(99-1_98-99)_1.mid</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LocalDebuggerCommandArguments>G:\1.devproject\kumyoung-karaoke-clone\work\Sf2Karaoke\Project\MIDI2\SoundFont\GMGSx.SF2 G:\1.devproject\kumyoung-karaoke-clone\work\Sf2Karaoke\Project\MIDI2\SongMIDI\38967_KR.mid</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>

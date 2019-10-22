@@ -29,10 +29,17 @@
 #define GETOPT_SUPPORT 1
 #endif
 
+#ifdef LIBINSTPATCH_SUPPORT
+#include <libinstpatch/libinstpatch.h>
+#endif
 #include "fluid_lash.h"
 
 #ifdef SYSTEMD_SUPPORT
 #include <systemd/sd-daemon.h>
+#endif
+
+#if SDL2_SUPPORT
+#include <SDL.h>
 #endif
 
 void print_usage(void);
@@ -295,6 +302,23 @@ fast_render_loop(fluid_settings_t *settings, fluid_synth_t *synth, fluid_player_
     delete_fluid_file_renderer(renderer);
 }
 
+static int is_dls(const char *fname)
+{
+#ifdef LIBINSTPATCH_SUPPORT
+    IpatchFileHandle *fhandle = ipatch_file_identify_open(fname, NULL);
+    int ret = (fhandle != NULL);
+
+    if(ret)
+    {
+        ipatch_file_close(fhandle);
+    }
+
+    return ret;
+#else
+    return FALSE;
+#endif
+}
+
 /*
  * main
  * Process initialization steps in the following order:
@@ -324,6 +348,7 @@ int main(int argc, char **argv)
     char buf[512];
     int c, i;
     int interactive = 1;
+    int quiet = 0;
     int midi_in = 1;
     fluid_player_t *player = NULL;
     fluid_midi_router_t *router = NULL;
@@ -339,7 +364,7 @@ int main(int argc, char **argv)
     int audio_channels = 0;
     int dump = 0;
     int fast_render = 0;
-    static const char optchars[] = "a:C:c:dE:f:F:G:g:hijK:L:lm:nO:o:p:R:r:sT:Vvz:";
+    static const char optchars[] = "a:C:c:dE:f:F:G:g:hijK:L:lm:nO:o:p:qR:r:sT:Vvz:";
 #ifdef LASH_ENABLED
     int connect_lash = 1;
     int enabled_lash = 0;		/* set to TRUE if lash gets enabled */
@@ -348,7 +373,19 @@ int main(int argc, char **argv)
     lash_args = fluid_lash_extract_args(&argc, &argv);
 #endif
 
-    print_welcome();
+#if SDL2_SUPPORT
+
+    if(SDL_Init(SDL_INIT_AUDIO) != 0)
+    {
+        fprintf(stderr, "Warning: Unable to initialize SDL2 Audio: %s", SDL_GetError());
+    }
+    else
+    {
+        atexit(SDL_Quit);
+    }
+
+#endif
+
 
     /* create the settings */
     settings = new_fluid_settings();
@@ -385,6 +422,7 @@ int main(int argc, char **argv)
             {"no-shell", 0, 0, 'i'},
             {"option", 1, 0, 'o'},
             {"portname", 1, 0, 'p'},
+            {"quiet", 0, 0, 'q'},
             {"reverb", 1, 0, 'R'},
             {"sample-rate", 1, 0, 'r'},
             {"server", 0, 0, 's'},
@@ -535,6 +573,7 @@ int main(int argc, char **argv)
             break;
 
         case 'h':
+            print_welcome();
             print_help(settings);
             result = 0;
             goto cleanup;
@@ -616,6 +655,19 @@ int main(int argc, char **argv)
             fluid_settings_setstr(settings, "midi.portname", optarg);
             break;
 
+        case 'q':
+            quiet = 1;
+
+#if defined(WIN32)
+            /* Windows logs to stdout by default, so make sure anything
+             * lower than PANIC is not printed either */
+            fluid_set_log_function(FLUID_ERR, NULL, NULL);
+            fluid_set_log_function(FLUID_WARN, NULL, NULL);
+            fluid_set_log_function(FLUID_INFO, NULL, NULL);
+            fluid_set_log_function(FLUID_DBG, NULL, NULL);
+#endif
+            break;
+
         case 'R':
             if((optarg != NULL) && ((FLUID_STRCMP(optarg, "0") == 0) || (FLUID_STRCMP(optarg, "no") == 0)))
             {
@@ -662,6 +714,7 @@ int main(int argc, char **argv)
             break;
 
         case 'V':
+            print_welcome();
             print_configure();
             result = 0;
             goto cleanup;
@@ -701,6 +754,10 @@ int main(int argc, char **argv)
 #else
     arg1 = i;
 #endif
+
+    if (!quiet) {
+        print_welcome();
+    }
 
     /* option help requested?  "-o help" */
     if(option_help)
@@ -764,7 +821,7 @@ int main(int argc, char **argv)
     /* load the soundfonts (check that all non options are SoundFont or MIDI files) */
     for(i = arg1; i < argc; i++)
     {
-        if(fluid_is_soundfont(argv[i]))
+        if(fluid_is_soundfont(argv[i]) || is_dls(argv[i]))
         {
             if(fluid_synth_sfload(synth, argv[i], 1) == -1)
             {
@@ -852,7 +909,7 @@ int main(int argc, char **argv)
                 fluid_synth_sfload(synth, s, 1);
             }
 
-            FLUID_FREE(s);
+            free(s);
         }
 
         fluid_player_play(player);
@@ -895,11 +952,13 @@ int main(int argc, char **argv)
             fprintf(stderr, "Failed to create the server.\n"
                     "Continuing without it.\n");
         }
+
 #ifdef SYSTEMD_SUPPORT
         else
         {
             sd_notify(0, "READY=1");
         }
+
 #endif
     }
 
@@ -926,11 +985,13 @@ int main(int argc, char **argv)
         }
 
         fluid_settings_dupstr(settings, "audio.file.name", &filename);
-        printf("Rendering audio to file '%s'..\n", filename);
+        if (!quiet) {
+            printf("Rendering audio to file '%s'..\n", filename);
+        }
 
         if(filename)
         {
-            FLUID_FREE(filename);
+            free(filename);
         }
 
         fast_render_loop(settings, synth, player);
@@ -1104,6 +1165,9 @@ print_help(fluid_settings_t *settings)
            "    Audio file format for fast rendering or aufile driver (\"help\" for list)\n");
     printf(" -p, --portname=[label]\n"
            "    Set MIDI port name (alsa_seq, coremidi drivers)\n");
+    printf(" -q, --quiet\n"
+           "    Do not print welcome message or other informational output\n"
+           "    (Windows only: also suppress all log messages lower than PANIC\n");
     printf(" -r, --sample-rate\n"
            "    Set the sample rate\n");
     printf(" -R, --reverb\n"
@@ -1121,11 +1185,11 @@ print_help(fluid_settings_t *settings)
 
     if(audio_options)
     {
-        FLUID_FREE(audio_options);
+        free(audio_options);
     }
 
     if(midi_options)
     {
-        FLUID_FREE(midi_options);
+        free(midi_options);
     }
 }

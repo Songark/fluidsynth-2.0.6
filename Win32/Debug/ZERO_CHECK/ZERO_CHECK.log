@@ -1,0 +1,61 @@
+﻿  Checking Build System
+  CMake is re-running because G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/generate.stamp is out-of-date.
+    the file 'G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/src/config.cmake'
+    is newer than 'G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6/CMakeFiles/generate.stamp.depend'
+    result='-1'
+  -- Checking whether system has ANSI C header files
+  -- ANSI C header files - not found
+  -- Looking for inet_ntop
+  -- Looking for inet_ntop - not found
+  -- Checking for module 'sndfile>=1.0.0'
+  --   No package 'sndfile' found
+  -- Checking for module 'libpulse-simple>=0.9.8'
+  --   No package 'libpulse-simple' found
+  -- Checking for module 'jack'
+  --   No package 'jack' found
+  -- Checking for module 'dbus-1>=1.0.0'
+  --   No package 'dbus-1' found
+  -- Looking for ladspa.h
+  -- Looking for ladspa.h - not found
+  -- Could NOT find READLINE (missing: READLINE_INCLUDE_DIR READLINE_LIBRARIES) 
+  -- Found OpenMP 200203
+  -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+  
+  **************************************************************
+  Summary:
+  Build type:            RelWithDebInfo
+  Install Prefix:        C:/Program Files (x86)/FluidSynth
+  libsndfile:            no (raw audio file rendering only)
+  D-Bus:                 no
+  PulseAudio:            no
+  JACK:                  no
+  ALSA:                  no
+  PortAudio:             no
+  OSS:                   no
+  MidiShare:             no
+  CoreAudio:             no
+  CoreMIDI:              no
+  Windows:               yes
+  DSound:                yes
+  WinMidi support:       yes
+  LADSPA support:        no
+  LASH support:          no
+  systemd support:       no
+  OS/2 DART support:     no
+  Audio to file driver:  yes
+  NETWORK Support :      yes
+  IPV6 Support :         no
+  Readline:              no
+  Samples type=float:    no (using double)
+  Profiling:             no
+  OpenMP 4.0:            no
+  Multi-thread support   yes
+  Debug:                 no
+  Trap on FPE (debug):   no
+  Check FPE (debug):     no
+  **************************************************************
+  
+  
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: G:/1.devproject/kumyoung-karaoke-clone/work/FluidSynth/fluidsynth-2.0.6

@@ -319,7 +319,7 @@ fluid_voice_init(fluid_voice_t *voice, fluid_sample_t *sample,
     voice->mod_count = 0;
     voice->start_time = start_time;
     voice->has_noteoff = 0;
-    UPDATE_RVOICE0(fluid_rvoice_reset);
+    UPDATE_RVOICE0(fluid_rvoice_reset);	
 
     /* Increment the reference count of the sample to prevent the
        unloading of the soundfont while this voice is playing,
@@ -344,9 +344,9 @@ fluid_voice_init(fluid_voice_t *voice, fluid_sample_t *sample,
     voice->synth_gain = gain;
 
     /* avoid division by zero later*/
-    if(voice->synth_gain < 0.0000001)
+    if(voice->synth_gain < 0.0000001f)
     {
-        voice->synth_gain = 0.0000001;
+        voice->synth_gain = 0.0000001f;
     }
 
     UPDATE_RVOICE_R1(fluid_rvoice_set_synth_gain, voice->synth_gain);
@@ -360,6 +360,13 @@ fluid_voice_init(fluid_voice_t *voice, fluid_sample_t *sample,
     i = 2 * (voice->chan % channel->synth->audio_groups);
     UPDATE_RVOICE_GENERIC_I2(fluid_rvoice_buffers_set_mapping, &voice->rvoice->buffers, 0, i);
     UPDATE_RVOICE_GENERIC_I2(fluid_rvoice_buffers_set_mapping, &voice->rvoice->buffers, 1, i + 1);
+
+	for (int _n = 0; _n < GEN_LAST; _n++) {
+		int value = fluid_channel_get_gen(channel, _n);
+		if (value != 0) {
+			fluid_voice_set_param(voice, _n, value);
+		}
+	}
 
     return FLUID_OK;
 }
@@ -428,17 +435,7 @@ fluid_voice_gen_get(fluid_voice_t *voice, int gen)
 
 fluid_real_t fluid_voice_gen_value(const fluid_voice_t *voice, int num)
 {
-    /* This is an extension to the SoundFont standard. More
-     * documentation is available at the fluid_synth_set_gen2()
-     * function. */
-    if(voice->gen[num].flags == GEN_ABS_NRPN)
-    {
-        return (fluid_real_t) voice->gen[num].nrpn;
-    }
-    else
-    {
-        return (fluid_real_t)(voice->gen[num].val + voice->gen[num].mod + voice->gen[num].nrpn);
-    }
+    return (fluid_real_t)(voice->gen[num].val + voice->gen[num].mod + voice->gen[num].nrpn);
 }
 
 /*
@@ -605,7 +602,7 @@ fluid_voice_calculate_runtime_synthesis_parameters(fluid_voice_t *voice)
      *  - Add the output value to the modulation value of the generator.
      *
      * Note: The generators have been initialized with
-     * fluid_gen_set_default_values.
+     * fluid_gen_init().
      */
 
     for(i = 0; i < voice->mod_count; i++)
@@ -690,32 +687,32 @@ calculate_hold_decay_buffers(fluid_voice_t *voice, int gen_base,
     if(is_decay)
     {
         /* SF 2.01 section 8.1.3 # 28, 36 */
-        if(timecents > 8000.0)
+        if(timecents > 8000.f)
         {
-            timecents = 8000.0;
+            timecents = 8000.f;
         }
     }
     else
     {
         /* SF 2.01 section 8.1.3 # 27, 35 */
-        if(timecents > 5000)
+        if(timecents > 5000.f)
         {
-            timecents = 5000.0;
+            timecents = 5000.f;
         }
 
         /* SF 2.01 section 8.1.2 # 27, 35:
          * The most negative number indicates no hold time
          */
-        if(timecents <= -32768.)
+        if(timecents <= -32768.f)
         {
             return 0;
         }
     }
 
     /* SF 2.01 section 8.1.3 # 27, 28, 35, 36 */
-    if(timecents < -12000.0)
+    if(timecents < -12000.f)
     {
-        timecents = -12000.0;
+        timecents = -12000.f;
     }
 
     seconds = fluid_tc2sec(timecents);
@@ -724,7 +721,7 @@ calculate_hold_decay_buffers(fluid_voice_t *voice, int gen_base,
     /* round to next full number of buffers */
     buffers = (int)(((fluid_real_t)voice->output_rate * seconds)
                     / (fluid_real_t)FLUID_BUFSIZE
-                    + 0.5);
+                    + 0.5f);
 
     return buffers;
 }
@@ -784,7 +781,7 @@ fluid_voice_update_param(fluid_voice_t *voice, int gen)
         /* Range: SF2.01 section 8.1.3 # 48
          * Motivation for range checking:
          * OHPiano.SF2 sets initial attenuation to a whooping -96 dB */
-        fluid_clip(voice->attenuation, 0.0, 1440.0);
+        fluid_clip(voice->attenuation, 0.f, 1440.f);
         UPDATE_RVOICE_R1(fluid_rvoice_set_attenuation, voice->attenuation);
         break;
 
@@ -804,14 +801,14 @@ fluid_voice_update_param(fluid_voice_t *voice, int gen)
     case GEN_REVERBSEND:
         /* The generator unit is 'tenths of a percent'. */
         voice->reverb_send = x / 1000.0f;
-        fluid_clip(voice->reverb_send, 0.0, 1.0);
+        fluid_clip(voice->reverb_send, 0.f, 1.f);
         UPDATE_RVOICE_BUFFERS_AMP(fluid_rvoice_buffers_set_amp, 2, fluid_voice_calculate_gain_amplitude(voice, voice->reverb_send));
         break;
 
     case GEN_CHORUSSEND:
         /* The generator unit is 'tenths of a percent'. */
         voice->chorus_send = x / 1000.0f;
-        fluid_clip(voice->chorus_send, 0.0, 1.0);
+        fluid_clip(voice->chorus_send, 0.f, 1.f);
         UPDATE_RVOICE_BUFFERS_AMP(fluid_rvoice_buffers_set_amp, 3, fluid_voice_calculate_gain_amplitude(voice, voice->chorus_send));
         break;
 
@@ -880,17 +877,17 @@ fluid_voice_update_param(fluid_voice_t *voice, int gen)
         break;
 
     case GEN_MODLFOTOPITCH:
-        fluid_clip(x, -12000.0, 12000.0);
+        fluid_clip(x, -12000.f, 12000.f);
         UPDATE_RVOICE_R1(fluid_rvoice_set_modlfo_to_pitch, x);
         break;
 
     case GEN_MODLFOTOVOL:
-        fluid_clip(x, -960.0, 960.0);
+        fluid_clip(x, -960.f, 960.f);
         UPDATE_RVOICE_R1(fluid_rvoice_set_modlfo_to_vol, x);
         break;
 
     case GEN_MODLFOTOFILTERFC:
-        fluid_clip(x, -12000, 12000);
+        fluid_clip(x, -12000.f, 12000.f);
         UPDATE_RVOICE_R1(fluid_rvoice_set_modlfo_to_fc, x);
         break;
 
@@ -927,7 +924,7 @@ fluid_voice_update_param(fluid_voice_t *voice, int gen)
         break;
 
     case GEN_VIBLFOTOPITCH:
-        fluid_clip(x, -12000.0, 12000.0);
+        fluid_clip(x, -12000.f, 12000.f);
         UPDATE_RVOICE_R1(fluid_rvoice_set_viblfo_to_pitch, x);
         break;
 
@@ -980,7 +977,7 @@ fluid_voice_update_param(fluid_voice_t *voice, int gen)
         break;
 
     case GEN_MODENVTOPITCH:
-        fluid_clip(x, -12000.0, 12000.0);
+        fluid_clip(x, -12000.f, 12000.f);
         UPDATE_RVOICE_R1(fluid_rvoice_set_modenv_to_pitch, x);
         break;
 
@@ -989,7 +986,7 @@ fluid_voice_update_param(fluid_voice_t *voice, int gen)
          * Motivation for range checking:
          * Filter is reported to make funny noises now and then
          */
-        fluid_clip(x, -12000.0, 12000.0);
+        fluid_clip(x, -12000.f, 12000.f);
         UPDATE_RVOICE_R1(fluid_rvoice_set_modenv_to_fc, x);
         break;
 
@@ -1114,6 +1111,7 @@ fluid_voice_update_param(fluid_voice_t *voice, int gen)
         break;
 
     case GEN_MODENVATTACK:               /* SF2.01 section 8.1.3 # 26 */
+		x = 0;
         fluid_clip(x, -12000.0f, 8000.0f);
         count = 1 + NUM_BUFFERS_ATTACK(x);
         fluid_voice_update_modenv(voice, TRUE, FLUID_VOICE_ENVATTACK,
@@ -1185,7 +1183,7 @@ fluid_voice_update_param(fluid_voice_t *voice, int gen)
  */
 
 #define NBR_BIT_BY_VAR_LN2 5	/* for 32 bits variables */
-#define NBR_BIT_BY_VAR  (1 << NBR_BIT_BY_VAR_LN2)	
+#define NBR_BIT_BY_VAR  (1 << NBR_BIT_BY_VAR_LN2)
 #define NBR_BIT_BY_VAR_ANDMASK (NBR_BIT_BY_VAR - 1)
 #define	SIZE_UPDATED_GEN_BIT  ((GEN_LAST + NBR_BIT_BY_VAR_ANDMASK) / NBR_BIT_BY_VAR)
 
@@ -1209,7 +1207,7 @@ int fluid_voice_modulate(fluid_voice_t *voice, int cc, int ctrl)
         mod = &voice->mod[i];
 
         /* step 1: find all the modulators that have the changed controller
-           as input source. When ctrl is -1 all modulators destination 
+           as input source. When ctrl is -1 all modulators destination
            are updated */
         if(ctrl < 0 || fluid_mod_has_source(mod, cc, ctrl))
         {
@@ -1281,7 +1279,7 @@ void fluid_voice_update_portamento(fluid_voice_t *voice, int fromkey, int tokey)
     unsigned int countinc = (unsigned int)(((fluid_real_t)voice->output_rate *
                                             0.001f *
                                             (fluid_real_t)fluid_channel_portamentotime(channel))  /
-                                           (fluid_real_t)FLUID_BUFSIZE  + 0.5);
+                                           (fluid_real_t)FLUID_BUFSIZE  + 0.5f);
 
     /* Send portamento parameters to the voice dsp */
     UPDATE_RVOICE_GENERIC_IR(fluid_rvoice_set_portamento, voice->rvoice, countinc, pitchoffset);
@@ -1465,10 +1463,10 @@ fluid_voice_stop(fluid_voice_t *voice)
 }
 
 /**
- * Adds a modulator to the voice.
- * @param voice Voice instance
- * @param mod Modulator info (copied)
- * @param mode Determines how to handle an existing identical modulator
+ * Adds a modulator to the voice if the modulator has valid sources.
+ * @param voice Voice instance.
+ * @param mod Modulator info (copied).
+ * @param mode Determines how to handle an existing identical modulator.
  *   #FLUID_VOICE_ADD to add (offset) the modulator amounts,
  *   #FLUID_VOICE_OVERWRITE to replace the modulator,
  *   #FLUID_VOICE_DEFAULT when adding a default modulator - no duplicate should
@@ -1477,32 +1475,42 @@ fluid_voice_stop(fluid_voice_t *voice)
 void
 fluid_voice_add_mod(fluid_voice_t *voice, fluid_mod_t *mod, int mode)
 {
+    /* Ignore the modulator if its sources inputs are invalid */
+    if(fluid_mod_check_sources(mod, "api fluid_voice_add_mod mod"))
+    {
+        fluid_voice_add_mod_local(voice, mod, mode, FLUID_NUM_MOD);
+    }
+}
+
+/**
+ * Adds a modulator to the voice.
+ * local version of fluid_voice_add_mod function. Called at noteon time.
+ * @param voice, mod, mode, same as for fluid_voice_add_mod() (see above).
+ * @param check_limit_count is the modulator number limit to handle with existing
+ *   identical modulator(i.e mode FLUID_VOICE_OVERWRITE, FLUID_VOICE_ADD).
+ *   - When FLUID_NUM_MOD, all the voices modulators (since the previous call)
+ *     are checked for identity.
+ *   - When check_count_limit is below the actual number of voices modulators
+ *   (voice->mod_count), this will restrict identity check to this number,
+ *   This is usefull when we know by advance that there is no duplicate with
+ *   modulators at index above this limit. This avoid wasting cpu cycles at noteon.
+ */
+void
+fluid_voice_add_mod_local(fluid_voice_t *voice, fluid_mod_t *mod, int mode, int check_limit_count)
+{
     int i;
 
-    /*
-     * Some soundfonts come with a huge number of non-standard
-     * controllers, because they have been designed for one particular
-     * sound card.  Discard them, maybe print a warning.
-     */
-
-    if(((mod->flags1 & FLUID_MOD_CC) == 0)
-            && ((mod->src1 != FLUID_MOD_NONE)            /* SF2.01 section 8.2.1: Constant value */
-                && (mod->src1 != FLUID_MOD_VELOCITY)        /* Note-on velocity */
-                && (mod->src1 != FLUID_MOD_KEY)             /* Note-on key number */
-                && (mod->src1 != FLUID_MOD_KEYPRESSURE)     /* Poly pressure */
-                && (mod->src1 != FLUID_MOD_CHANNELPRESSURE) /* Channel pressure */
-                && (mod->src1 != FLUID_MOD_PITCHWHEEL)      /* Pitch wheel */
-                && (mod->src1 != FLUID_MOD_PITCHWHEELSENS)))/* Pitch wheel sensitivity */
+    /* check_limit_count cannot be above voice->mod_count */
+    if(check_limit_count > voice->mod_count)
     {
-        FLUID_LOG(FLUID_WARN, "Ignoring invalid controller, using non-CC source %i.", mod->src1);
-        return;
+        check_limit_count = voice->mod_count;
     }
 
     if(mode == FLUID_VOICE_ADD)
     {
 
         /* if identical modulator exists, add them */
-        for(i = 0; i < voice->mod_count; i++)
+        for(i = 0; i < check_limit_count; i++)
         {
             if(fluid_mod_test_identity(&voice->mod[i], mod))
             {
@@ -1517,7 +1525,7 @@ fluid_voice_add_mod(fluid_voice_t *voice, fluid_mod_t *mod, int mode)
     {
 
         /* if identical modulator exists, replace it (only the amount has to be changed) */
-        for(i = 0; i < voice->mod_count; i++)
+        for(i = 0; i < check_limit_count; i++)
         {
             if(fluid_mod_test_identity(&voice->mod[i], mod))
             {
@@ -1745,7 +1753,7 @@ fluid_voice_get_lower_boundary_for_attenuation(fluid_voice_t *voice)
                     || (mod->flags2 & FLUID_MOD_BIPOLAR)
                     || (mod->amount < 0))
             {
-                min_val *= -1.0; /* min_val = - |amount|*/
+                min_val = -min_val; /* min_val = - |amount|*/
             }
             else
             {
@@ -1779,10 +1787,10 @@ fluid_voice_get_lower_boundary_for_attenuation(fluid_voice_t *voice)
 
 
 
-int fluid_voice_set_param(fluid_voice_t *voice, int gen, fluid_real_t nrpn_value, int abs)
+int fluid_voice_set_param(fluid_voice_t *voice, int gen, fluid_real_t nrpn_value)
 {
     voice->gen[gen].nrpn = nrpn_value;
-    voice->gen[gen].flags = (abs) ? GEN_ABS_NRPN : GEN_SET;
+    voice->gen[gen].flags = GEN_SET;
     fluid_voice_update_param(voice, gen);
     return FLUID_OK;
 }
@@ -1792,9 +1800,9 @@ int fluid_voice_set_gain(fluid_voice_t *voice, fluid_real_t gain)
     fluid_real_t left, right, reverb, chorus;
 
     /* avoid division by zero*/
-    if(gain < 0.0000001)
+    if(gain < 0.0000001f)
     {
-        gain = 0.0000001;
+        gain = 0.0000001f;
     }
 
     voice->synth_gain = gain;
@@ -1964,9 +1972,9 @@ fluid_voice_get_overflow_prio(fluid_voice_t *voice,
             // FIXME: Should take into account where on the envelope we are...?
         }
 
-        if(a < 0.1)
+        if(a < 0.1f)
         {
-            a = 0.1; // Avoid div by zero
+            a = 0.1f; // Avoid div by zero
         }
 
         this_voice_prio += score->volume / a;

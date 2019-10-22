@@ -157,6 +157,19 @@ enum midi_rpn_event
     RPN_MODULATION_DEPTH_RANGE = 0x05
 };
 
+/* General MIDI NRPN event numbers (LSB, MSB = 1) */
+enum midi_nrpn_event
+{
+	NRPN_VIBRATE_RATE = 0x08,
+	NRPN_VIBRATE_DEPTH = 0x09,
+	NRPN_VIBRATE_DELAY = 0x0A,
+	NRPN_FILTA_FREQ = 0x20,
+	NRPN_FILTA_RESONANCE = 0x21,
+	NRPN_ENVELOP_ATTACK = 0x63,
+	NRPN_ENVELOP_DECAY = 0x64,
+	NRPN_ENVELOP_RELEASE = 0x66,
+};
+
 enum midi_meta_event
 {
     MIDI_TEXT = 0x01,
@@ -166,7 +179,8 @@ enum midi_meta_event
     MIDI_LYRIC = 0x05,
     MIDI_MARKER = 0x06,
     MIDI_CUE_POINT = 0x07,
-    MIDI_EOT = 0x2f,
+	MIDI_PORT = 0x21,
+	MIDI_EOT = 0x2f,
     MIDI_SET_TEMPO = 0x51,
     MIDI_SMPTE_OFFSET = 0x54,
     MIDI_TIME_SIGNATURE = 0x58,
@@ -212,8 +226,14 @@ enum midi_sysex_tuning_msg_id
 #define MIDI_SYSEX_GM_OFF               0x02    /**< Disable GM mode */
 #define MIDI_SYSEX_COMMANDID_DT1        0x12    /**< Command Id (DT1) */
 
+/* General MIDI sub-ID #4 */
 #define MIDI_SYSEX_ADDRESS_MSB			0x40
+
+/* General MIDI sub-ID #4 */
+#define MIDI_SYSEX_MASTERVOLUME			0x04
 #define MIDI_SYSEX_DRUMKIT				0x15
+#define MIDI_SYSEX_REVERBCHORUS			0x30
+#define MIDI_SYSEX_REVERBCHARACTER		0x31
 
 
 enum fluid_driver_status
@@ -254,6 +274,7 @@ struct _fluid_track_t
     fluid_midi_event_t *cur;
     fluid_midi_event_t *last;
     unsigned int ticks;
+	unsigned int port;
 	unsigned int muteflag;
 };
 

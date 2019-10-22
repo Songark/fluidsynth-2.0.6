@@ -154,6 +154,12 @@
 /* Define to enable network support */
 #cmakedefine NETWORK_SUPPORT @NETWORK_SUPPORT@
 
+/* Defined when fluidsynth is build in an automated enviornment, where no MSVC++ Runtime Debug Assertion dialogs should pop up */
+#cmakedefine NO_GUI @NO_GUI@
+
+/* libinstpatch for DLS and GIG */
+#cmakedefine LIBINSTPATCH_SUPPORT @LIBINSTPATCH_SUPPORT@
+
 /* libsndfile has ogg vorbis support */
 #cmakedefine LIBSNDFILE_HASVORBIS @LIBSNDFILE_HASVORBIS@
 
@@ -171,6 +177,12 @@
 
 /* Define to enable OSS driver */
 #cmakedefine OSS_SUPPORT @OSS_SUPPORT@
+
+/* Define to enable OPENSLES driver */
+#cmakedefine OPENSLES_SUPPORT @OPENSLES_SUPPORT@
+
+/* Define to enable Oboe driver */
+#cmakedefine OBOE_SUPPORT @OBOE_SUPPORT@
 
 /* Name of package */
 #cmakedefine PACKAGE "@PACKAGE@"
@@ -199,8 +211,14 @@
 /* Define to enable DirectSound driver */
 #cmakedefine DSOUND_SUPPORT @DSOUND_SUPPORT@
 
+/* Define to enable Windows WaveOut driver */
+#cmakedefine WAVEOUT_SUPPORT @WAVEOUT_SUPPORT@
+
 /* Define to enable Windows MIDI driver */
 #cmakedefine WINMIDI_SUPPORT @WINMIDI_SUPPORT@
+
+/* Define to enable SDL2 audio driver */
+#cmakedefine SDL2_SUPPORT @SDL2_SUPPORT@
 
 /* Define to 1 if you have the ANSI C header files. */
 #cmakedefine STDC_HEADERS @STDC_HEADERS@
@@ -235,5 +253,23 @@
 #ifndef __cplusplus
 #cmakedefine inline @INLINE_KEYWORD@
 #endif
+
+/* Define to 1 if you have the sinf() function. */
+#cmakedefine HAVE_SINF @HAVE_SINF@
+
+/* Define to 1 if you have the cosf() function. */
+#cmakedefine HAVE_COSF @HAVE_COSF@
+
+/* Define to 1 if you have the fabsf() function. */
+#cmakedefine HAVE_FABSF @HAVE_FABSF@
+
+/* Define to 1 if you have the powf() function. */
+#cmakedefine HAVE_POWF @HAVE_POWF@
+
+/* Define to 1 if you have the sqrtf() function. */
+#cmakedefine HAVE_SQRTF @HAVE_SQRTF@
+
+/* Define to 1 if you have the logf() function. */
+#cmakedefine HAVE_LOGF @HAVE_LOGF@
 
 #endif /* CONFIG_H */

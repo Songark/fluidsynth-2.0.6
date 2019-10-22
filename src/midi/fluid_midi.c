@@ -620,6 +620,7 @@ fluid_midi_file_read_event(fluid_midi_file *mf, fluid_track_t *track)
     int status;
     int type;
     int tempo;
+	int port;
     unsigned char *metadata = NULL;
     unsigned char *dyn_buf = NULL;
     unsigned char static_buf[256];
@@ -832,6 +833,20 @@ fluid_midi_file_read_event(fluid_midi_file *mf, fluid_track_t *track)
         case MIDI_CUE_POINT:
             break; /* don't care much for text events */
 
+		case MIDI_PORT:
+			if (mf->varlen != 1)
+			{
+				FLUID_LOG(FLUID_ERR, "Invalid length for SetPort meta event");
+				result = FLUID_FAILED;
+				break;
+			}
+			else {
+				port = metadata[0];
+				track->port = port;
+				mf->dtime = 0;
+			}
+			break;
+
         case MIDI_EOT:
             if(mf->varlen != 0)
             {
@@ -1029,10 +1044,10 @@ fluid_midi_file_read_event(fluid_midi_file *mf, fluid_track_t *track)
         }
 
         evt->dtime = mf->dtime;
-        evt->type = type;
-        evt->channel = channel;
+        evt->type = type;        
         evt->param1 = param1;
         evt->param2 = param2;
+		evt->channel = channel;
         fluid_track_add_event(track, evt);
         mf->dtime = 0;
     }
@@ -1436,6 +1451,7 @@ new_fluid_track(int num)
     track->last = NULL;
     track->ticks = 0;
 	track->muteflag = 0;
+	track->port = 0;
     return track;
 }
 
@@ -1508,8 +1524,11 @@ fluid_track_get_duration(fluid_track_t *track)
 int
 fluid_track_add_event(fluid_track_t *track, fluid_midi_event_t *evt)
 {
-    evt->next = NULL;
+	if (track->port > 0)
+		evt->channel = evt->channel * (16 ^ track->port);
 
+    evt->next = NULL;
+	
     if(track->first == NULL)
     {
         track->first = evt;
@@ -1911,14 +1930,14 @@ fluid_player_load(fluid_player_t *player, fluid_playlist_item *item)
 
         buffer = fluid_file_read_full(fp, &buffer_length);
 
+        FLUID_FCLOSE(fp);
+
         if(buffer == NULL)
         {
-            FLUID_FCLOSE(fp);
             return FLUID_FAILED;
         }
 
         buffer_owned = 1;
-        FLUID_FCLOSE(fp);
     }
     else
     {

@@ -154,6 +154,12 @@
 /* Define to enable network support */
 #define NETWORK_SUPPORT 1
 
+/* Defined when fluidsynth is build in an automated enviornment, where no MSVC++ Runtime Debug Assertion dialogs should pop up */
+/* #undef NO_GUI */
+
+/* libinstpatch for DLS and GIG */
+/* #undef LIBINSTPATCH_SUPPORT */
+
 /* libsndfile has ogg vorbis support */
 /* #undef LIBSNDFILE_HASVORBIS */
 
@@ -171,6 +177,12 @@
 
 /* Define to enable OSS driver */
 /* #undef OSS_SUPPORT */
+
+/* Define to enable OPENSLES driver */
+/* #undef OPENSLES_SUPPORT */
+
+/* Define to enable Oboe driver */
+/* #undef OBOE_SUPPORT */
 
 /* Name of package */
 #define PACKAGE "fluidsynth"
@@ -199,8 +211,14 @@
 /* Define to enable DirectSound driver */
 #define DSOUND_SUPPORT 1
 
+/* Define to enable Windows WaveOut driver */
+/* #undef WAVEOUT_SUPPORT */
+
 /* Define to enable Windows MIDI driver */
 #define WINMIDI_SUPPORT 1
+
+/* Define to enable SDL2 audio driver */
+/* #undef SDL2_SUPPORT */
 
 /* Define to 1 if you have the ANSI C header files. */
 /* #undef STDC_HEADERS */
@@ -235,5 +253,23 @@
 #ifndef __cplusplus
 /* #undef inline */
 #endif
+
+/* Define to 1 if you have the sinf() function. */
+/* #undef HAVE_SINF */
+
+/* Define to 1 if you have the cosf() function. */
+/* #undef HAVE_COSF */
+
+/* Define to 1 if you have the fabsf() function. */
+/* #undef HAVE_FABSF */
+
+/* Define to 1 if you have the powf() function. */
+/* #undef HAVE_POWF */
+
+/* Define to 1 if you have the sqrtf() function. */
+/* #undef HAVE_SQRTF */
+
+/* Define to 1 if you have the logf() function. */
+/* #undef HAVE_LOGF */
 
 #endif /* CONFIG_H */
